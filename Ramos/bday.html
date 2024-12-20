@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Mahal!</title>
+    <style>
+        body {
+            font-family: 'Arial, sans-serif';
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background:white ;
+            color: black;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-right:250px;
+            margin-left: 250px;
+            text-align: justify;
+        }
+        video {
+            width: 100%;
+            border-radius: 10px;
+            margin: 15px 0;
+            autoplay: true;
+            muted: true;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background:#f7ae62;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s;
+            cursor: pointer;
+            border:none;
+        }
+        .btn:hover {
+            background: #a9846a;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+        .modal-content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            color: black;
+            width: 100%;
+            overflow-y: auto;
+           height: 100%;
+            animation: slideIn 0.5s ease-in-out;
+        }
+        .modal-content img {
+            width: 300px;
+            height: 400px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            margin:10px;
+              background: linear-gradient(to top, #fff, rgba(255, 255, 255, 0));
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+        }
+        .close {
+            background: transparent;
+            color: black;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 90px;
+            font-size: 2        0px;
+        }
+        .close:hover{
+            background: white;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+         @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 0.9rem;
+                margin: 5px 10px;
+            }
+            .modal-content img {
+                width: 80%;
+                max-width: 300px;
+            }
+            .close {
+                font-size: 18px;
+                right: 5px;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday, Mahal!</h1>
+        
+        <video controls autoplay muted>
+            <source src="img/1.mp4" type="video/mp4">
+        </video>
+        <!-- Button to trigger modal -->
+        <button class="btn" id="showGallery">Together</button>
+    </div>
+
+    <!-- Modal for Gallery -->
+    <div class="modal" id="galleryModal">
+        <div class="modal-content">
+            <h2>𝑯𝒂𝒑𝒑𝒚 𝑩𝒊𝒓𝒕𝒉𝒅𝒂𝒚 𝑴𝒂𝒉𝒂𝒍 🫶💜</h2>
+            <img src="img/8.jpg" alt="Picture 1">
+            <img src="img/7.jpg" alt="Picture 2">
+            <img src="img/5.jpg" alt="Picture 3">
+            <img src="img/4.jpg" alt="Picture 4">
+            <p> 𝑻𝒉𝒂𝒏𝒌 𝒚𝒐𝒖 𝒇𝒐𝒓 𝒆𝒗𝒆𝒓𝒚𝒕𝒉𝒊𝒏𝒈!
+                Thank you sa pag-spoil sa akin ng food palagi at sa pagbibigay
+                 mo kapag alam mong zero balance na ako. Thank you for always 
+                 being my kakampi—kahit ikaw rin ang number one kong kaaway, 
+                 HAHAHAHA! Sorry sa lahat—alam mo na ’yon.      <br>   <br> 
+
+                 Always remember na proud ako sa’yo at sa lahat ng achievements
+                  mo, maliit man or malaki. Andito lang ako lagi para sa’yo. Wish 
+                  ko lang na  matupad mo sana mga pangarap mo sa buhay , maging 
+                  healthy ka palagi, mag- iingat at sana bawasan mo na rin ang 
+                  pagiging makulit mo HAHAHA 
+
+                 <br>   𝑰 𝒍𝒐𝒗𝒆 𝒚𝒐𝒖 𝒔𝒐 𝒎𝒖𝒄𝒉, 𝑴𝒂𝒉𝒂𝒍!🫶💜 </p>
+            <button class="close" id="closeModal">x</button>
+        </div>
+    </div>
+
+    <script>
+        // Show modal when the button is clicked
+        const showGalleryButton = document.getElementById('showGallery');
+        const galleryModal = document.getElementById('galleryModal');
+        const closeModalButton = document.getElementById('closeModal');
+
+        showGalleryButton.addEventListener('click', () => {
+            galleryModal.style.display = 'flex';
+        });
+
+        closeModalButton.addEventListener('click', () => {
+            galleryModal.style.display = 'none';
+        });
+
+        // Close modal when clicking outside the modal content
+        window.addEventListener('click', (e) => {
+            if (e.target === galleryModal) {
+                galleryModal.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
